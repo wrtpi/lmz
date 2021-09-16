@@ -2,8 +2,11 @@
 #  自动构建 PSG1218
 #      
 # # # # # # # # # # #
-name: Padavan CI PSG1218
+name: Padavan K2 PSG1218
+
 on:
+  repository_dispatch:
+  workflow_dispatch:
   # schedule:                           # 时间表
   #   - cron: '0 19 * * *'              # 每天国际时间19点，北京时间凌晨3点执行(北京+8)
   push: # push 操作
